@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: bg 10s infinite ease-in;
+
+
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 80vw;
+    border-radius: 40px;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-set {
+    height: 50px;
+}
+
+.row {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input {
+    height: 40px;
+    border: 2px solid black;
+    width: 340px;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+.button {
+    height: 30px;
+    width: 260px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.sing-up {
+    display: inline;
+    display: flex;
+    flex-direction: row !important;
+}
+
+.social-media-icon {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.infinity {
+    font-size: 40px;
+    color: red;
+}
+
+#right-side {
+    width: 50%;
+    height: 100%;
+    background-image: url(rightsideimg.jpg);
+    background-size: cover;
+    border-top-right-radius: 40px;
+    background-repeat: no-repeat;
+    /* filter: blur(2px); */
+    animation: change 10s infinite ease-in-out;
+}
+
+#right-side-img {
+    height: 100%;
+    width: 100%;
+}
+
+.right-side-paragraph {
+    background-color: rgba(255, 0, 0, 0.253);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.img-set-second {
+    height: 80px;
+    width: 160px;
+}
+@media screen and (max-width: 500px) {
+   
+    .back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .input{
+    width: 150px;
+
+  }
+  #right-side{
+      display: none;
+    }
+  .left-side{
+    gap: 10px;
+  }
+}
+
+@keyframes change {
+    0% {
+        background-image: url(https://thumbs.dreamstime.com/b/new-york-city-buildings-16710579.jpg);
+    }
+
+    20% {
+        background-image: url(https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg);
+    }
+
+    40% {
+        background-image: url(https://media.istockphoto.com/id/1446097589/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.webp?b=1&s=170667a&w=0&k=20&c=Wh4ELq_ZcbpbBlsyPSV0tTQDkHPpiOPtKcu6cRT-gZ0=);
+    }
+
+    60% {
+        background-image: url(https://housing.com/news/wp-content/uploads/2023/03/Building-highrise-Know-pros-and-cons-how-to-build-what-to-consider-f.jpg);
+    }
+
+    80% {
+        background-image: url(https://media.architecturaldigest.com/photos/6557c141623ad444980d2e50/16:9/w_2560%2Cc_limit/hoechstes-gebaeude-der-welt-taipei-101.jpg);
+    }
+
+    100% {
+        background-image: url(https://a.cdn-hotels.com/gdcs/production107/d1826/87b0e3b5-01da-4be3-8b0c-2d763513cd56.jpg?impolicy=fcrop&w=800&h=533&q=medium);
+    }
+}
+@keyframes bg{
+    0% {
+        background-image: url(https://wallpapers.com/images/hd/cool-nature-l82srp7qs7e12r6o.jpg);
+    }
+    20% {
+        background-image: url(https://i.pinimg.com/736x/cd/0c/13/cd0c13629f217c1ab72c61d0664b3f99.jpg);
+    }
+    40% {
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/720/32/916/cool-backgrounds-nature-1920x1200-wallpaper-preview.jpg);
+    }
+    60% {
+        background-image: url(https://www.desktopbackground.org/p/2014/06/19/780268_cool-wallpapers-beautiful-nature-hd-wallpaper-1024-576_1024x576_h.jpg);
+    }
+    80% {
+        background-image: url(https://e1.pxfuel.com/desktop-wallpaper/413/833/desktop-wallpaper-cool-nature.jpg);
+    }
+    100% {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9liaLT8BDqdMvnCLDjSDQtAep54TcPbDVLg&usqp=CAU);
+    }
+
+}
